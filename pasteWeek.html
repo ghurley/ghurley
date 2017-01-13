@@ -1,0 +1,402 @@
+<html>
+<head>
+  <title>Week Grid</title>
+  <style>
+    html, body {
+      font-family: Roboto, 'Helvetica Neue';
+    }
+    textarea {
+      font-family: "Inconsolata";
+    }
+    .tier1 {
+      background-color: #faa33b;
+      color:white;
+      text-align: center;
+    }
+    .tier2 {
+      background-color: #33d9c2;
+      color:white;
+      text-align: center;
+    }
+    .tier3 {
+      background-color: #2aace3;
+      color:white;
+      text-align: center;
+    }
+    .tier4 {
+      background-color: #af005e;
+      color:white;
+      text-align: center;
+    }
+    .tier5 {
+      background-color: #333d47;
+      color:white;
+      text-align: center;
+    }
+    .tier6 {
+      background-color: #fcdcf0;
+      color:black;
+      text-align: center;
+    }
+    td {
+      padding:6px
+    }
+    td.hour-target {
+      background-color: #e2e1df;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <input type="radio">Tier 1<br>
+    <input type="radio">Tier 2<br>
+    <div>+ Tier</div>
+  </form>
+  <div id="tiers">
+
+  </div>
+  <table>
+   <tr class="hour-header">
+      <td></td>
+      <td>05</td>
+      <td>06</td>
+      <td>07</td>
+      <td>08</td>
+      <td>09</td>
+      <td>10</td>
+      <td>11</td>
+      <td>12</td>
+      <td>13</td>
+      <td>14</td>
+      <td>15</td>
+      <td>16</td>
+      <td>17</td>
+      <td>18</td>
+      <td>19</td>
+      <td>20</td>
+      <td>21</td>
+      <td>22</td>
+      <td>23</td>
+      <td>00</td>
+      <td>01</td>
+      <td>02</td>
+      <td>03</td>
+      <td>04</td>
+    </tr>
+    <tr id="day_0" class="day-row" data-day="1">
+      <td>Monday</td>
+      <td class="hour-target" data-hour="5"> </td>
+      <td class="hour-target" data-hour="6"> </td>
+      <td class="hour-target" data-hour="7"> </td>
+      <td class="hour-target" data-hour="8"> </td>
+      <td class="hour-target" data-hour="9"> </td>
+      <td class="hour-target" data-hour="10"> </td>
+      <td class="hour-target" data-hour="11"> </td>
+      <td class="hour-target" data-hour="12"> </td>
+      <td class="hour-target" data-hour="13"> </td>
+      <td class="hour-target" data-hour="14"> </td>
+      <td class="hour-target" data-hour="15"> </td>
+      <td class="hour-target" data-hour="16"> </td>
+      <td class="hour-target" data-hour="17"> </td>
+      <td class="hour-target" data-hour="18"> </td>
+      <td class="hour-target" data-hour="19"> </td>
+      <td class="hour-target" data-hour="20"> </td>
+      <td class="hour-target" data-hour="21"> </td>
+      <td class="hour-target" data-hour="22"> </td>
+      <td class="hour-target" data-hour="23"> </td>
+      <td class="hour-target" data-hour="0"> </td>
+      <td class="hour-target" data-hour="1"> </td>
+      <td class="hour-target" data-hour="2"> </td>
+      <td class="hour-target" data-hour="3"> </td>
+      <td class="hour-target" data-hour="4"> </td>
+    </tr>
+    <tr id="day_1" class="day-row" data-day="2">
+      <td>Tuesday</td>
+      <td class="hour-target" data-hour="5"> </td>
+      <td class="hour-target" data-hour="6"> </td>
+      <td class="hour-target" data-hour="7"> </td>
+      <td class="hour-target" data-hour="8"> </td>
+      <td class="hour-target" data-hour="9"> </td>
+      <td class="hour-target" data-hour="10"> </td>
+      <td class="hour-target" data-hour="11"> </td>
+      <td class="hour-target" data-hour="12"> </td>
+      <td class="hour-target" data-hour="13"> </td>
+      <td class="hour-target" data-hour="14"> </td>
+      <td class="hour-target" data-hour="15"> </td>
+      <td class="hour-target" data-hour="16"> </td>
+      <td class="hour-target" data-hour="17"> </td>
+      <td class="hour-target" data-hour="18"> </td>
+      <td class="hour-target" data-hour="19"> </td>
+      <td class="hour-target" data-hour="20"> </td>
+      <td class="hour-target" data-hour="21"> </td>
+      <td class="hour-target" data-hour="22"> </td>
+      <td class="hour-target" data-hour="23"> </td>
+      <td class="hour-target" data-hour="0"> </td>
+      <td class="hour-target" data-hour="1"> </td>
+      <td class="hour-target" data-hour="2"> </td>
+      <td class="hour-target" data-hour="3"> </td>
+      <td class="hour-target" data-hour="4"> </td>
+    </tr>
+    <tr id="day_2" class="day-row" data-day="3">
+      <td>Wednesday</td>
+      <td class="hour-target" data-hour="5"> </td>
+      <td class="hour-target" data-hour="6"> </td>
+      <td class="hour-target" data-hour="7"> </td>
+      <td class="hour-target" data-hour="8"> </td>
+      <td class="hour-target" data-hour="9"> </td>
+      <td class="hour-target" data-hour="10"> </td>
+      <td class="hour-target" data-hour="11"> </td>
+      <td class="hour-target" data-hour="12"> </td>
+      <td class="hour-target" data-hour="13"> </td>
+      <td class="hour-target" data-hour="14"> </td>
+      <td class="hour-target" data-hour="15"> </td>
+      <td class="hour-target" data-hour="16"> </td>
+      <td class="hour-target" data-hour="17"> </td>
+      <td class="hour-target" data-hour="18"> </td>
+      <td class="hour-target" data-hour="19"> </td>
+      <td class="hour-target" data-hour="20"> </td>
+      <td class="hour-target" data-hour="21"> </td>
+      <td class="hour-target" data-hour="22"> </td>
+      <td class="hour-target" data-hour="23"> </td>
+      <td class="hour-target" data-hour="0"> </td>
+      <td class="hour-target" data-hour="1"> </td>
+      <td class="hour-target" data-hour="2"> </td>
+      <td class="hour-target" data-hour="3"> </td>
+      <td class="hour-target" data-hour="4"> </td>
+    </tr>
+    <tr id="day_3" class="day-row" data-day="4">
+      <td>Thursday</td>
+      <td class="hour-target" data-hour="5"> </td>
+      <td class="hour-target" data-hour="6"> </td>
+      <td class="hour-target" data-hour="7"> </td>
+      <td class="hour-target" data-hour="8"> </td>
+      <td class="hour-target" data-hour="9"> </td>
+      <td class="hour-target" data-hour="10"> </td>
+      <td class="hour-target" data-hour="11"> </td>
+      <td class="hour-target" data-hour="12"> </td>
+      <td class="hour-target" data-hour="13"> </td>
+      <td class="hour-target" data-hour="14"> </td>
+      <td class="hour-target" data-hour="15"> </td>
+      <td class="hour-target" data-hour="16"> </td>
+      <td class="hour-target" data-hour="17"> </td>
+      <td class="hour-target" data-hour="18"> </td>
+      <td class="hour-target" data-hour="19"> </td>
+      <td class="hour-target" data-hour="20"> </td>
+      <td class="hour-target" data-hour="21"> </td>
+      <td class="hour-target" data-hour="22"> </td>
+      <td class="hour-target" data-hour="23"> </td>
+      <td class="hour-target" data-hour="0"> </td>
+      <td class="hour-target" data-hour="1"> </td>
+      <td class="hour-target" data-hour="2"> </td>
+      <td class="hour-target" data-hour="3"> </td>
+      <td class="hour-target" data-hour="4"> </td>
+    </tr>
+    <tr id="day_4" class="day-row" data-day="5">
+      <td>Friday</td>
+      <td class="hour-target" data-hour="5"> </td>
+      <td class="hour-target" data-hour="6"> </td>
+      <td class="hour-target" data-hour="7"> </td>
+      <td class="hour-target" data-hour="8"> </td>
+      <td class="hour-target" data-hour="9"> </td>
+      <td class="hour-target" data-hour="10"> </td>
+      <td class="hour-target" data-hour="11"> </td>
+      <td class="hour-target" data-hour="12"> </td>
+      <td class="hour-target" data-hour="13"> </td>
+      <td class="hour-target" data-hour="14"> </td>
+      <td class="hour-target" data-hour="15"> </td>
+      <td class="hour-target" data-hour="16"> </td>
+      <td class="hour-target" data-hour="17"> </td>
+      <td class="hour-target" data-hour="18"> </td>
+      <td class="hour-target" data-hour="19"> </td>
+      <td class="hour-target" data-hour="20"> </td>
+      <td class="hour-target" data-hour="21"> </td>
+      <td class="hour-target" data-hour="22"> </td>
+      <td class="hour-target" data-hour="23"> </td>
+      <td class="hour-target" data-hour="0"> </td>
+      <td class="hour-target" data-hour="1"> </td>
+      <td class="hour-target" data-hour="2"> </td>
+      <td class="hour-target" data-hour="3"> </td>
+      <td class="hour-target" data-hour="4"> </td>
+    </tr>
+    <tr id="day_5" class="day-row"data-day="6">
+      <td>Saturday</td>
+      <td class="hour-target" data-hour="5"> </td>
+      <td class="hour-target" data-hour="6"> </td>
+      <td class="hour-target" data-hour="7"> </td>
+      <td class="hour-target" data-hour="8"> </td>
+      <td class="hour-target" data-hour="9"> </td>
+      <td class="hour-target" data-hour="10"> </td>
+      <td class="hour-target" data-hour="11"> </td>
+      <td class="hour-target" data-hour="12"> </td>
+      <td class="hour-target" data-hour="13"> </td>
+      <td class="hour-target" data-hour="14"> </td>
+      <td class="hour-target" data-hour="15"> </td>
+      <td class="hour-target" data-hour="16"> </td>
+      <td class="hour-target" data-hour="17"> </td>
+      <td class="hour-target" data-hour="18"> </td>
+      <td class="hour-target" data-hour="19"> </td>
+      <td class="hour-target" data-hour="20"> </td>
+      <td class="hour-target" data-hour="21"> </td>
+      <td class="hour-target" data-hour="22"> </td>
+      <td class="hour-target" data-hour="23"> </td>
+      <td class="hour-target" data-hour="0"> </td>
+      <td class="hour-target" data-hour="1"> </td>
+      <td class="hour-target" data-hour="2"> </td>
+      <td class="hour-target" data-hour="3"> </td>
+      <td class="hour-target" data-hour="4"> </td>
+    </tr>
+    <tr id="day_6" class="day-row" data-day="7">
+      <td>Sunday</td>
+      <td class="hour-target" data-hour="5"> </td>
+      <td class="hour-target" data-hour="6"> </td>
+      <td class="hour-target" data-hour="7"> </td>
+      <td class="hour-target" data-hour="8"> </td>
+      <td class="hour-target" data-hour="9"> </td>
+      <td class="hour-target" data-hour="10"> </td>
+      <td class="hour-target" data-hour="11"> </td>
+      <td class="hour-target" data-hour="12"> </td>
+      <td class="hour-target" data-hour="13"> </td>
+      <td class="hour-target" data-hour="14"> </td>
+      <td class="hour-target" data-hour="15"> </td>
+      <td class="hour-target" data-hour="16"> </td>
+      <td class="hour-target" data-hour="17"> </td>
+      <td class="hour-target" data-hour="18"> </td>
+      <td class="hour-target" data-hour="19"> </td>
+      <td class="hour-target" data-hour="20"> </td>
+      <td class="hour-target" data-hour="21"> </td>
+      <td class="hour-target" data-hour="22"> </td>
+      <td class="hour-target" data-hour="23"> </td>
+      <td class="hour-target" data-hour="0"> </td>
+      <td class="hour-target" data-hour="1"> </td>
+      <td class="hour-target" data-hour="2"> </td>
+      <td class="hour-target" data-hour="3"> </td>
+      <td class="hour-target" data-hour="4"> </td>
+    </tr>
+  </table>
+  <div>
+    <button id="clearBtn">Clear</button>
+    <button id="processBtn">Process</button>
+  </div>
+  <textarea rows="7" cols="80" id="weekInput">40	30
+20		30
+																10
+															35	30	35
+															20	43	40
+
+																							</textarea>
+  <!-- Stop indenting you monster. -->
+  <script>
+    let process = function() {
+      // Clear out the existing grid values;
+      for (let cellGrid of document.querySelectorAll('td.hour-target')){
+        cellGrid.innerHTML = '';
+        cellGrid.className = 'hour-target';
+      }
+
+      // Process the textarea contents and paint the grid cells.
+      let weekInputValue = weekInput.value;
+      let hoursByTier = processInputWeek(weekInputValue);
+      let inOrderTierKeys = Object.keys(hoursByTier).map(function(x){
+        return parseInt(x)
+      }).sort();
+
+      console.log(inOrderTierKeys);
+      let tierNumber = 1;
+      for (let k of inOrderTierKeys) {
+        createTier(k);  // Make each tier. Should be idempotent.
+        // Add the hours to the grid for that tier.
+        for (let dh of hoursByTier[k]) {
+          setGridHourToTier(dh.day, dh.hour, k, tierNumber);
+        }
+        tierNumber += 1;
+      }
+    };
+
+    let weekInput = document.getElementById('weekInput');
+
+    weekInput.onpaste = function(){
+        // The onpaste event fires before the text acutally makes it into the box,
+        // so set up a timeout.
+        setTimeout(process, 120);
+    };
+
+    document.getElementById('clearBtn').onclick = function () {
+        weekInput.value = "";  // Clear the textarea
+    }
+
+    // Wire up handler for process button click.
+    document.getElementById('processBtn').onclick = process;
+
+
+    let processInputWeek = function(inputWeek) {
+      let selectedHoursByTier = {};
+      let dayNum = 0;
+      for (let day of inputWeek.split("\n")) {
+        let hourNum = 5;
+        for (let dollarValue of day.split("\t")) {
+          if (dollarValue != '') {
+            let o = {day: dayNum, hour: hourNum};
+            if (dollarValue in selectedHoursByTier){
+              selectedHoursByTier[dollarValue].push(o);
+            } else {
+              selectedHoursByTier[dollarValue] = [o];
+            }
+          }
+          hourNum = (hourNum + 1) % 24;
+        }
+        dayNum += 1;
+      }
+      return selectedHoursByTier;
+    };
+
+    let createTier = function(tierAmount) {
+      console.log("create tier with amount: %d", tierAmount);
+    };
+
+    let setGridHourToTier = function(day, hour, value, tierNumber) {
+      console.log("set day: %d hour: %d value: %d tier number: %d", day, hour, value, tierNumber);
+      let dayElt = document.getElementById('day_' + day);
+      let hourCols = dayElt.querySelectorAll('td');
+      for(let hourCol of hourCols) {
+        if (hour == hourCol.dataset.hour) {
+          hourCol.className = 'tier' + tierNumber;
+          hourCol.innerHTML = value;
+        }
+      }
+    };
+
+
+    // Set up click handlers so that clicking on hours will turn them "on".
+    let tds = document.querySelectorAll('td.hour-target');
+    for (let td of tds) {
+      td.addEventListener('click', function(td) {
+        let hour = td.srcElement.dataset.hour;
+        let day = td.srcElement.parentNode.dataset.day;
+        console.log("day: %s hour: %s", day, hour);
+        td.srcElement.className = 'tier1';
+      }, false);
+    }
+
+
+    // Function to paint in a bunch of hours.
+    let paint = function(dayHours) {
+      for (let hour of dayHours) {
+        let d = "" + hour.day;
+        let h = hour.hour;
+
+        let dayElt = document.getElementById('day_' + d);
+        let hourCols = dayElt.querySelectorAll('td');
+        for(let hourCol of hourCols) {
+          if (h == hourCol.dataset.hour) {
+            hourCol.className = 'tier1';
+          }
+        }
+      }
+    };
+
+    // let dayHours = [{day:1, hour: 3},{day:2, hour: 4},{day:3, hour: 5},];
+    // paint(dayHours);
+
+  </script>
+</body>
+</html>
